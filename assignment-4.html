@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  	.navbar-nav{
+  		float :right;
+  	}
+  	li:hover{
+  		background-color:tomato;
+  	}
+  	.navbar-custom{
+  		height: 90px;
+  		font-size: 20px;
+  		background-color:crimson;
+  		padding: 16px 16px;  	
+  	}
+  	a{
+  		color: white;
+  	}
+  	#myCarousel{
+  		box-shadow: 0 0 5px 2px;
+  	}
+
+
+	h1{
+  		text-align: center;
+  	}
+  	.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+* {
+  box-sizing: border-box;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 2px 5px 1px;
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-1{
+border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-size: 40px">AppleVilla</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">ORDER</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">ABOUT</a></li>   
+    </ul>
+  </div>
+</nav>
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item">
+        <img src="https://blog.kissmyketo.com/wp-content/uploads/2019/03/Apple-cider-vinnegar.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item active">
+        <img src="https://w0.peakpx.com/wallpaper/344/1005/HD-wallpaper-still-life-apple-autumn-vase-beautiful-fruit-graphy-nice-cool-bouquet-basket-flower-flowers-harmony.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="https://www.stayathomemum.com.au/wp-content/uploads/2018/02/flashlarevista.com1_.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/woman-and-apples-marina-zharinova.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>  
+    
+  </div>
+</div>
+
+<h1 style="color: black;font-family:serif;">Our Best Products & Varieties</h1>
+<div class="container">
+ <div class="row">
+  <div class="column">
+    <div class="card">
+    <h3>OUR GOLDEN DELICIOUS</h3>
+      <img src="https://www.publicdomainpictures.net/pictures/60000/nahled/basket-with-apples.jpg" alt="New york" style="width:100%;">
+      <h4>PRICE:₹20/Kg</h4>
+      <p>Golden Delicious apples are firm, crisp, and white-fleshed. These apples have a balanced sweet-tart aromatic flavor, which has been described as honeyed.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>OUR MACINTOSH</h3>
+      <img src="https://i.pinimg.com/originals/3d/48/60/3d48603c03e3da5edad626b14659dc6f.jpg" alt="New york" style="width:100%;">
+      <h4>PRICE:₹40/kg</h4>
+      <p>It tastes like tart apple cider and is incredibly juicy. The old-fashioned apply flavor of a McIntosh apple mellows with time to a more sweet and pear-like flavor.</p>
+      </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>OUR GANNY SMITH</h3>
+      <img src="https://ak.picdn.net/shutterstock/videos/11713961/thumb/11.jpg" alt="New york" style="width:100%;">
+      <h4>PRICE:₹30/kg</h4>
+      <p>Granny Smith apples are famous for their sour green apple flavor. They have a strong tart flavor and have a bright acidic tang.</p>
+    </div>
+  </div>  
+<div class="column">
+    <div class="card">
+      <h3>OUR FUJI</h3>
+      <img src="https://i.pinimg.com/originals/f3/e2/d1/f3e2d1ebe387e842a6e7504929e2fd18.jpg" alt="New york" style="width:100%;">
+      <h4>PRICE:₹50/Kg</h4>
+      <p>The taste of Fuji apples is somewhat like that of Ralls Janet and Red Delicious. It’s got the tart crunchiness of a Ralls Janet. It also puts its sweet foot forward just like the Red Delicious.</p>
+    </div>
+  </div>  
+  </div>
+</div>
+
+
+<div class="container container-1">
+	<div class="card">
+		<h2>Contact Us</h2>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+</body>
+</html>
